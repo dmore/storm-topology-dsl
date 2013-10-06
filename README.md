@@ -33,7 +33,7 @@ The advantage of the letter is that you don't have to call `build()` yourself.
 ## Declaring Spouts and Bolts
 
 Spouts are declared via the `addSpout` method. The `x` method not only passes a parallelism hint, but
-must also be called to effectively declare the spout.[0]
+must [also be called][0] to effectively declare the spout.
 
 ```scala
 import com.mariussoutier.storm.topology._
@@ -101,4 +101,4 @@ StormTopologyDsl.buildTopology { implicit topology =>
 Please refer to the tests and API docs for more examples.
 
 
-[0]: Making the `x`-method do two things sounds like bad design (and it is), however it's necessary because the underlying Storm topology doesn't allow setting this value after declaring a spout or bolt.
+  [0]: Making the `x`-method do two things sounds like bad design (and it is), however it's necessary because the underlying Storm topology doesn't allow setting this value after declaring a spout or bolt.
