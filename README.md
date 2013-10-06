@@ -19,6 +19,7 @@ ad-hoc topology.
  class MyTopology extends StormTopologyDsl {
    ...
  }
+ val myTopology: StormTopology = new MyTopology().build()
  ```
 
  ```scala
@@ -28,7 +29,7 @@ ad-hoc topology.
  }
 ```
 
-The advantage of the letter is that you don't have to call `build()` yourself.
+The advantage of the latter is that you don't have to call `build()` yourself.
 
 ## Declaring Spouts and Bolts
 
@@ -63,11 +64,11 @@ will simply set the name to the simple class name.
 
 ## Groupings
 
-The essence of any topology is how the tuples that are streamed between bolts are grouped. This is
+The essence of any topology is how the tuples flowing between bolts are grouped. This is
 done by defining groupings, and sometimes streams.
 
 When we declared spouts and bolt, in contrast to the Java API we didn't specify a String ID.
-This means we don't have to care about some assigned String but we use values to compose our topology.
+This means we don't have to care about some assigned String, but we use values to compose our topology.
 
 To pipe a spout or bolt into another bolt, we use a left-to-right syntax.
 
@@ -83,7 +84,7 @@ StormTopologyDsl.buildTopology { implicit topology =>
 }
 ```
 
-There are also symbolic (sic!) versions of the same method available.
+There are also symbolic (sic!) versions of the same methods available.
 
 ```scala
 import com.mariussoutier.storm.topology._
