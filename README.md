@@ -100,5 +100,5 @@ StormTopologyDsl.buildTopology { implicit topology =>
 }
 ```
 
-Please refer to the tests and [http://mariussoutier.github.io/storm-topology-dsl/api](API docs)
+Please refer to the tests and [API docs](http://mariussoutier.github.io/storm-topology-dsl/api)
 for more examples.
