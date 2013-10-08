@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>topology - com.mariussoutier.storm.topology</title>
+          <meta name="description" content="topology - com.mariussoutier.storm.topology" />
+          <meta name="keywords" content="topology com.mariussoutier.storm.topology" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'com.mariussoutier.storm.topology.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="com">com</a>.<a href="../../package.html" class="extype" name="com.mariussoutier">mariussoutier</a>.<a href="../package.html" class="extype" name="com.mariussoutier.storm">storm</a></p>
+        <h1>topology</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">topology</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="com.mariussoutier.storm.topology"><span>topology</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.mariussoutier.storm.topology.BoltBuilder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BoltBuilderextendsProductwithSerializable"></a>
+      <a id="BoltBuilder:BoltBuilder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="BoltBuilder.html"><span class="name">BoltBuilder</span></a><span class="params">(<span name="boltName">boltName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="bolt">bolt: <span class="extype" name="backtype.storm.topology.IRichBolt">IRichBolt</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="topology">topology: <span class="extype" name="backtype.storm.topology.TopologyBuilder">TopologyBuilder</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Prepares bolt declaration.</p>
+    </li><li name="com.mariussoutier.storm.topology.BoltGrouper" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BoltGrouperextendsBoltGroupingswithProductwithSerializable"></a>
+      <a id="BoltGrouper:BoltGrouper"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="BoltGrouper.html"><span class="name">BoltGrouper</span></a><span class="params">(<span name="boltName">boltName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="declarer">declarer: <span class="extype" name="backtype.storm.topology.BoltDeclarer">BoltDeclarer</span></span>)</span><span class="result"> extends <a href="BoltGroupings.html" class="extype" name="com.mariussoutier.storm.topology.BoltGroupings">BoltGroupings</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains the declarer and can be used to define groupings on bolts</p>
+    </li><li name="com.mariussoutier.storm.topology.BoltGroupings" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BoltGroupingsextendsAnyRef"></a>
+      <a id="BoltGroupings:BoltGroupings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="BoltGroupings.html"><span class="name">BoltGroupings</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Defines the grouping methods available on both spouts and bolts.</p>
+    </li><li name="com.mariussoutier.storm.topology.DeclaredSpout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DeclaredSpoutextendsBoltGroupingswithProductwithSerializable"></a>
+      <a id="DeclaredSpout:DeclaredSpout"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DeclaredSpout.html"><span class="name">DeclaredSpout</span></a><span class="params">(<span name="spoutName">spoutName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="declarer">declarer: <span class="extype" name="backtype.storm.topology.SpoutDeclarer">SpoutDeclarer</span></span>)</span><span class="result"> extends <a href="BoltGroupings.html" class="extype" name="com.mariussoutier.storm.topology.BoltGroupings">BoltGroupings</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains the declarer and can be used to define groupings on bolts</p>
+    </li><li name="com.mariussoutier.storm.topology.SpoutBuilder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SpoutBuilderextendsAnyRef"></a>
+      <a id="SpoutBuilder:SpoutBuilder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SpoutBuilder.html"><span class="name">SpoutBuilder</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Prepares spout details.</p>
+    </li><li name="com.mariussoutier.storm.topology.StormTopologyDsl" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StormTopologyDslextendsAnyRef"></a>
+      <a id="StormTopologyDsl:StormTopologyDsl"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="StormTopologyDsl.html"><span class="name">StormTopologyDsl</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.mariussoutier.storm.topology.StormTopologyDsl" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StormTopologyDsl"></a>
+      <a id="StormTopologyDsl:StormTopologyDsl"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="StormTopologyDsl$.html"><span class="name">StormTopologyDsl</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="com.mariussoutier.storm.topology.package#addBolt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addBolt(bolt:backtype.storm.topology.IRichBolt)(implicitdsl:com.mariussoutier.storm.topology.StormTopologyDsl):com.mariussoutier.storm.topology.BoltBuilder"></a>
+      <a id="addBolt(IRichBolt)(StormTopologyDsl):BoltBuilder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addBolt</span><span class="params">(<span name="bolt">bolt: <span class="extype" name="backtype.storm.topology.IRichBolt">IRichBolt</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="dsl">dsl: <a href="StormTopologyDsl.html" class="extype" name="com.mariussoutier.storm.topology.StormTopologyDsl">StormTopologyDsl</a></span>)</span><span class="result">: <a href="BoltBuilder.html" class="extype" name="com.mariussoutier.storm.topology.BoltBuilder">BoltBuilder</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="com.mariussoutier.storm.topology.package#addBolt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addBolt(bolt:backtype.storm.topology.IRichBolt,optBoltId:Option[String])(implicitdsl:com.mariussoutier.storm.topology.StormTopologyDsl):com.mariussoutier.storm.topology.BoltBuilder"></a>
+      <a id="addBolt(IRichBolt,Option[String])(StormTopologyDsl):BoltBuilder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addBolt</span><span class="params">(<span name="bolt">bolt: <span class="extype" name="backtype.storm.topology.IRichBolt">IRichBolt</span></span>, <span name="optBoltId">optBoltId: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="dsl">dsl: <a href="StormTopologyDsl.html" class="extype" name="com.mariussoutier.storm.topology.StormTopologyDsl">StormTopologyDsl</a></span>)</span><span class="result">: <a href="BoltBuilder.html" class="extype" name="com.mariussoutier.storm.topology.BoltBuilder">BoltBuilder</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="com.mariussoutier.storm.topology.package#addBolt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addBolt(bolt:backtype.storm.topology.IBasicBolt,optBoltId:Option[String])(implicitdsl:com.mariussoutier.storm.topology.StormTopologyDsl):com.mariussoutier.storm.topology.BoltBuilder"></a>
+      <a id="addBolt(IBasicBolt,Option[String])(StormTopologyDsl):BoltBuilder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addBolt</span><span class="params">(<span name="bolt">bolt: <span class="extype" name="backtype.storm.topology.IBasicBolt">IBasicBolt</span></span>, <span name="optBoltId">optBoltId: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="dsl">dsl: <a href="StormTopologyDsl.html" class="extype" name="com.mariussoutier.storm.topology.StormTopologyDsl">StormTopologyDsl</a></span>)</span><span class="result">: <a href="BoltBuilder.html" class="extype" name="com.mariussoutier.storm.topology.BoltBuilder">BoltBuilder</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="com.mariussoutier.storm.topology.package#addBolt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addBolt(bolt:backtype.storm.topology.IBasicBolt)(implicitdsl:com.mariussoutier.storm.topology.StormTopologyDsl):com.mariussoutier.storm.topology.BoltBuilder"></a>
+      <a id="addBolt(IBasicBolt)(StormTopologyDsl):BoltBuilder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addBolt</span><span class="params">(<span name="bolt">bolt: <span class="extype" name="backtype.storm.topology.IBasicBolt">IBasicBolt</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="dsl">dsl: <a href="StormTopologyDsl.html" class="extype" name="com.mariussoutier.storm.topology.StormTopologyDsl">StormTopologyDsl</a></span>)</span><span class="result">: <a href="BoltBuilder.html" class="extype" name="com.mariussoutier.storm.topology.BoltBuilder">BoltBuilder</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="com.mariussoutier.storm.topology.package#addSpout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addSpout(spout:backtype.storm.topology.IRichSpout,optSpoutId:Option[String])(implicitdsl:com.mariussoutier.storm.topology.StormTopologyDsl):com.mariussoutier.storm.topology.SpoutBuilder"></a>
+      <a id="addSpout(IRichSpout,Option[String])(StormTopologyDsl):SpoutBuilder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addSpout</span><span class="params">(<span name="spout">spout: <span class="extype" name="backtype.storm.topology.IRichSpout">IRichSpout</span></span>, <span name="optSpoutId">optSpoutId: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="dsl">dsl: <a href="StormTopologyDsl.html" class="extype" name="com.mariussoutier.storm.topology.StormTopologyDsl">StormTopologyDsl</a></span>)</span><span class="result">: <a href="SpoutBuilder.html" class="extype" name="com.mariussoutier.storm.topology.SpoutBuilder">SpoutBuilder</a></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../../lib/template.js"></script>
+    </body>
+      </html>
